@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator</title>
+</head>
+
+<body>
+    <form action="/postNewPoll" method="post" id="form">
+        <p>Название опроса:</p>
+        <input type="text" name="poll_name" value="" required> <br>
+        <p>Описание опроса:</p>
+        <input type="text" name="poll_content" value="" required> <br>
+        <input type="checkbox" name="private" value="true"> Приватный <br>
+        <button onclick="createAnswer()" type="button">Создать ответ</button>
+        <input type="submit">
+    </form>
+
+    <script src="pollCreator.js"></script>
+</body>
+
+</html>
